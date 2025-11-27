@@ -14,7 +14,8 @@ const introdata = {
   },
   description:
     "I'm a Front-end Developer at Silver Goose 8 International. I'm interested in Web Development, it can be Front-end or even Back-end Development.",
-  your_img_url: "https://images.unsplash.com/photo-1546146830-2cca9512c68e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D",
+  your_img_url:
+    "https://images.unsplash.com/photo-1546146830-2cca9512c68e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D",
 };
 
 const dataabout = {
@@ -54,20 +55,20 @@ const skills = [
   },
   {
     name: "NPM",
-    value: "50"
+    value: "50",
   },
   {
     name: "PHP",
-    value: "40"
+    value: "40",
   },
   {
     name: "CodeIgniter",
-    value: "50"
+    value: "50",
   },
   {
     name: "Photoshop",
-    value: "40"
-  }
+    value: "40",
+  },
 ];
 
 const services = [
@@ -90,73 +91,6 @@ const dataportfolio = [
       "My passion for making Cool Websites, produced this. A Car (RWB) Website.",
     link: "https://car-website-pearl-seven.vercel.app/",
   },
-  {
-    img: "https://picsum.photos/400/800/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/600/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/300/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-
-  {
-    img: "https://picsum.photos/400/600/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/300/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/550/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
 ];
 
 const contactConfig = {
@@ -174,7 +108,7 @@ const contactConfig = {
 const socialprofils = {
   github: "https://github.com/TheArisAngelo",
   facebook: "https://web.facebook.com/TheArisAngelo/",
-  linkedin: "https://www.linkedin.com/in/aris-angelo-don-florentino-100599313", 
+  linkedin: "https://www.linkedin.com/in/aris-angelo-don-florentino-100599313",
 };
 export {
   meta,
