@@ -92,7 +92,7 @@ const dataportfolio = [
     link: "https://car-website-pearl-seven.vercel.app/",
   },
   {
-    img: "https://unsplash.com/photos/a-tomato-with-a-stem-4bsuG277Goo",
+    img: "/images/react-portfolio.png",
     description:
       "Pomodoro Project that is a secret weapon for getting things done.",
     link: "https://pomodoro-project-lime.vercel.app/",
