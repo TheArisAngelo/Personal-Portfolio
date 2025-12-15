@@ -69,6 +69,14 @@ const skills = [
     name: "Photoshop",
     value: "40",
   },
+  {
+    name: "CyberSecurity",
+    value: "40",
+  },
+  {
+    name: "Blockchain",
+    value: "35",
+  },
 ];
 
 const services = [
