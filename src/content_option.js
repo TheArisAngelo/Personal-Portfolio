@@ -8,12 +8,14 @@ const meta = {
 const introdata = {
   title: "I’m Don!",
   animated: {
-    first: "I love coding",
-    second: "I make cool Websites",
-    third: "I develop Websites",
+    first: "I'm passionate about turning ideas into functional, elegant code.",
+    second:
+      "I create modern, user-friendly websites with clean and responsive designs.",
+    third:
+      "I build web experiences that are fast, accessible, and optimized for all devices.",
   },
   description:
-    "I'm a Front-end Developer at Silver Goose 8 International. I'm interested in Web Development, it can be Front-end or even Back-end Development.",
+    "Currently working as a Front-end Developer at Silver Goose 8 International. I'm passionate about all things web — whether it's building intuitive user interfaces or diving into back-end development to understand the full stack.",
   your_img_url:
     "https://images.unsplash.com/photo-1546146830-2cca9512c68e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D",
 };
