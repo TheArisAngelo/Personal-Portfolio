@@ -9,17 +9,17 @@ const Headermain = () => {
 
   const handleToggle = () => {
     setActive(!isActive);
-    // Prevent scrolling when the menu is open
     document.body.classList.toggle("overflow-hidden");
   };
 
   return (
     <>
-      {/* HEADER BAR */}
-      <header className="relative z-50 flex items-center justify-between p-6 lg:p-8">
+      {/* HEADER BAR - Sits at the top of everything (z-[100]) */}
+      <header className="relative z-[100] flex items-center justify-between p-6 lg:p-8">
         {/* LOGO */}
         <Link
           to="/"
+          onClick={() => isActive && handleToggle()} // Close menu if logo is clicked
           className="bg-neo-yellow border-4 border-black dark:border-white px-6 py-2 shadow-neo dark:shadow-neo-dark transform -rotate-3 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-neo-sm dark:hover:shadow-neo-sm-dark transition-all"
         >
           <h1 className="text-3xl lg:text-4xl font-black uppercase tracking-tighter text-black">
@@ -30,6 +30,8 @@ const Headermain = () => {
         {/* RIGHT CONTROLS */}
         <div className="flex items-center gap-3">
           <Themetoggle />
+
+          {/* Menu Button */}
           <button
             onClick={handleToggle}
             className="bg-neo-yellow border-4 border-black dark:border-white p-3 shadow-neo dark:shadow-neo-dark hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-neo-sm dark:hover:shadow-neo-sm-dark transition-all text-black"
@@ -39,13 +41,15 @@ const Headermain = () => {
         </div>
       </header>
 
-      {/* FULL SCREEN MENU OVERLAY */}
+      {/* FULL SCREEN MENU OVERLAY - Sits below header (z-[90]) but above page content */}
       <div
-        className={`fixed inset-0 z-40 transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-0 z-[90] bg-neo-bg dark:bg-neo-bg-dark transition-transform duration-300 ease-in-out ${
           isActive ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="flex flex-col h-full pt-32 pb-10 px-6 lg:px-20">
+        {/* Add padding-top so links don't overlap the header logo */}
+        <div className="flex flex-col h-full pt-28 lg:pt-32 pb-10 px-6 lg:px-20">
+          {/* MENU LINKS */}
           <ul className="flex flex-col gap-6 list-none m-0 p-0">
             {[
               { name: "Home", path: "/" },
@@ -65,6 +69,7 @@ const Headermain = () => {
             ))}
           </ul>
 
+          {/* MENU FOOTER (SOCIALS) */}
           <div className="mt-auto flex flex-col sm:flex-row justify-between items-end sm:items-center gap-6 pt-10 border-t-4 border-black dark:border-white">
             <div className="flex flex-wrap gap-4">
               {Object.entries(socialprofils).map(([key, value]) => (
@@ -79,7 +84,9 @@ const Headermain = () => {
                 </a>
               ))}
             </div>
-            <p className="font-bold text-lg">Copyright © {logotext}</p>
+            <p className="font-bold text-lg text-black dark:text-white">
+              Copyright © {logotext}
+            </p>
           </div>
         </div>
       </div>

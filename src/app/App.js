@@ -1,7 +1,11 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Headermain from "../header";
 import Socialicons from "../components/socialicons";
 import Home from "../pages/home";
+import { About } from "../pages/about";
+import { Portfolio } from "../pages/portfolio";
+import { ContactUs } from "../pages/contact";
 
 function App() {
   return (
@@ -9,7 +13,12 @@ function App() {
       <Headermain />
       <Socialicons />
       <main>
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<ContactUs />} />
+        </Routes>
       </main>
     </div>
   );

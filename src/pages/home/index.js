@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -36,12 +37,19 @@ const Home = () => {
 
         {/* Buttons */}
         <div className="flex flex-wrap gap-6 items-center">
-          <button className="...">
+          <Link
+            to="/portfolio"
+            className="bg-neo-yellow text-black font-black text-xl border-4 border-black dark:border-white px-8 py-4 shadow-neo dark:shadow-neo-dark hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-neo-sm dark:hover:shadow-neo-sm-dark transition-all duration-150 flex items-center gap-2"
+          >
             My Portfolio <span className="text-2xl">→</span>
-          </button>
-          <button className="bg-white dark:bg-neo-white-dark text-black dark:text-white border-4 border-black dark:border-white px-8 py-4 shadow-neo dark:shadow-neo-dark hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-neo-sm dark:hover:shadow-neo-sm-dark transition-all duration-150 flex items-center gap-2">
+          </Link>
+
+          <Link
+            to="/contact"
+            className="bg-white dark:bg-neo-white-dark text-black dark:text-white font-black text-xl border-4 border-black dark:border-white px-8 py-4 shadow-neo dark:shadow-neo-dark hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-neo-sm dark:hover:shadow-neo-sm-dark transition-all duration-150 flex items-center gap-2"
+          >
             Contact Me <span className="text-2xl">→</span>
-          </button>
+          </Link>
         </div>
 
         <div className="mt-4">

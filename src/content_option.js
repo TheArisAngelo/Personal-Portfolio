@@ -1,3 +1,6 @@
+import rwbImage from "./assets/images/rwb-project.jpg";
+import pomodoroImage from "./assets/images/pomodoro-project.jpg";
+
 const logotext = "Don";
 const meta = {
   title: "Don Florentino",
@@ -96,13 +99,13 @@ const services = [
 
 const dataportfolio = [
   {
-    img: "https://private-user-images.githubusercontent.com/143075331/393730878-44b78f42-b682-4e2c-ba90-55b18c7fbd3b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTg3MDE2NTgsIm5iZiI6MTc1ODcwMTM1OCwicGF0aCI6Ii8xNDMwNzUzMzEvMzkzNzMwODc4LTQ0Yjc4ZjQyLWI2ODItNGUyYy1iYTkwLTU1YjE4YzdmYmQzYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkyNFQwODA5MThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lOTM2ZDQ5Mzc1NWRmZWYzZWZlMjIzNjhiYzRjYzUxMzQ5NDdkNDNlNjdmMDYyYjVkYWQzMjE1MTVlNzM1ZjgzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.oYb82ZJE8hSZWEufqae4lr7FR-eJwjDi_0SAZ5Eh6CM",
+    img: rwbImage,
     description:
       "My passion for making Cool Websites, produced this. A Car (RWB) Website.",
     link: "https://car-website-pearl-seven.vercel.app/",
   },
   {
-    img: "/images/react-portfolio.png",
+    img: pomodoroImage,
     description:
       "Pomodoro Project that is a secret weapon for getting things done.",
     link: "https://pomodoro-project-lime.vercel.app/",
@@ -113,7 +116,7 @@ const contactConfig = {
   YOUR_EMAIL: "aris.angelo.don@outlook.com",
   YOUR_FONE: "09563740075",
   description:
-    "If you guys want to have a joint project or have a question about Developing, just let me know. Email & Phone number is provided. Take care as always. ",
+    "If you guys want to have a joint project or have a question about Programming, just let me know. Email & Phone number is provided. Take care as always. ",
   // creat an emailjs.com account
   // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
   YOUR_SERVICE_ID: "service_id",
