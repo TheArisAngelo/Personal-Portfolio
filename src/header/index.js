@@ -1,70 +1,88 @@
 import React, { useState } from "react";
-import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { logotext ,socialprofils } from "../content_option";
+import { logotext, socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
-  const [isActive, setActive] = useState("false");
+  const [isActive, setActive] = useState(false);
 
   const handleToggle = () => {
     setActive(!isActive);
-    document.body.classList.toggle("ovhidden");
+    // Prevent scrolling when the menu is open
+    document.body.classList.toggle("overflow-hidden");
   };
 
   return (
     <>
-      <header className="fixed-top site__header">
-        <div className="d-flex align-items-center justify-content-between">
-          <Link  className="navbar-brand nav_ac" to="/">
+      {/* HEADER BAR */}
+      <header className="relative z-50 flex items-center justify-between p-6 lg:p-8">
+        {/* LOGO */}
+        <Link
+          to="/"
+          className="bg-neo-yellow border-4 border-black dark:border-white px-6 py-2 shadow-neo dark:shadow-neo-dark transform -rotate-3 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-neo-sm dark:hover:shadow-neo-sm-dark transition-all"
+        >
+          <h1 className="text-3xl lg:text-4xl font-black uppercase tracking-tighter text-black">
             {logotext}
-          </Link>
-          <div className="d-flex align-items-center">
-          <Themetoggle />
-          <button className="menu__button  nav_ac" onClick={handleToggle}>
-            {!isActive ? <VscClose /> : <VscGrabber />}
-          </button>
-          
-          </div>
-        </div>
+          </h1>
+        </Link>
 
-        <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
-          <div className="bg__menu h-100">
-            <div className="menu__wrapper">
-              <div className="menu__container p-3">
-                <ul className="the_menu">
-                  <li className="menu_item ">
-                  <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
-                  </li>
-                  <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
-                  </li>
-                  <li className="menu_item">
-                  <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
-                  </li>
-                  <li className="menu_item">
-                  <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
-            <div className="d-flex">
-            <a href={socialprofils.facebook}>Facebook</a>
-            <a href={socialprofils.github}>Github</a>
-            <a href={socialprofils.twitter}>Twitter</a>
-            </div>
-            <p className="copyright m-0">copyright __ {logotext}</p>
-          </div>
+        {/* RIGHT CONTROLS */}
+        <div className="flex items-center gap-3">
+          <Themetoggle />
+          <button
+            onClick={handleToggle}
+            className="bg-neo-yellow border-4 border-black dark:border-white p-3 shadow-neo dark:shadow-neo-dark hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-neo-sm dark:hover:shadow-neo-sm-dark transition-all text-black"
+          >
+            {isActive ? <VscClose size={24} /> : <VscGrabber size={24} />}
+          </button>
         </div>
       </header>
-      <div className="br-top"></div>
-      <div className="br-bottom"></div>
-      <div className="br-left"></div>
-      <div className="br-right"></div>
-      
+
+      {/* FULL SCREEN MENU OVERLAY */}
+      <div
+        className={`fixed inset-0 z-40 transition-transform duration-300 ease-in-out ${
+          isActive ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
+        <div className="flex flex-col h-full pt-32 pb-10 px-6 lg:px-20">
+          <ul className="flex flex-col gap-6 list-none m-0 p-0">
+            {[
+              { name: "Home", path: "/" },
+              { name: "Portfolio", path: "/portfolio" },
+              { name: "About", path: "/about" },
+              { name: "Contact", path: "/contact" },
+            ].map((item, index) => (
+              <li key={index} className="w-full">
+                <Link
+                  onClick={handleToggle}
+                  to={item.path}
+                  className="inline-block bg-white dark:bg-neo-white-dark text-black dark:text-white border-4 border-black dark:border-white px-6 py-3 shadow-neo dark:shadow-neo-dark text-4xl lg:text-6xl font-black uppercase hover:bg-neo-yellow hover:text-black hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-neo-sm dark:hover:shadow-neo-sm-dark transition-all"
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-auto flex flex-col sm:flex-row justify-between items-end sm:items-center gap-6 pt-10 border-t-4 border-black dark:border-white">
+            <div className="flex flex-wrap gap-4">
+              {Object.entries(socialprofils).map(([key, value]) => (
+                <a
+                  key={key}
+                  href={value}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="bg-neo-blue text-white border-4 border-black dark:border-white px-4 py-2 font-bold shadow-neo-sm dark:shadow-neo-sm-dark hover:bg-neo-yellow hover:text-black transition-colors"
+                >
+                  {key.charAt(0).toUpperCase() + key.slice(1)}
+                </a>
+              ))}
+            </div>
+            <p className="font-bold text-lg">Copyright © {logotext}</p>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

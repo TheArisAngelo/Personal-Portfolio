@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Yellow Background -->
+  <rect width="100" height="100" fill="#FFD700" rx="10" />
+  
+  <!-- Thick Black Border -->
+  <rect x="6" y="6" width="88" height="88" fill="none" stroke="#000000" stroke-width="12" rx="6" />
+  
+  <!-- Bold "D" Letter -->
+  <text x="50" y="72" font-family="Arial Black, sans-serif" font-size="70" font-weight="900" fill="#000000" text-anchor="middle">D</text>
+</svg>
