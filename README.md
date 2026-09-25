@@ -19,3 +19,10 @@ This portfolio is a deliberate departure from the soft, minimalist trends that d
 - **Dark Mode:** A fully functional light/dark theme toggle that switches the entire color scheme, including borders and shadows.
 - **Dynamic Content:** All text, project data, work history, and skills are managed in a single content option file for easy updates.
 - **Interactive UI**
+
+## UI (Light Mode)
+
+- <img width="1917" height="1198" alt="image" src="https://github.com/user-attachments/assets/80a51359-e039-4983-a371-4af8e963f54e" />
+- <img width="1917" height="1198" alt="image" src="https://github.com/user-attachments/assets/eb07b24f-09f8-445b-b18d-f152555ebaf4" />
+- <img width="1915" height="1197" alt="image" src="https://github.com/user-attachments/assets/5b6d94c5-0021-4bb5-975f-24fc453e6f63" />
+
