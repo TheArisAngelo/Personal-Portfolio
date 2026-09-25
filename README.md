@@ -1,6 +1,6 @@
 # Aris Angelo Don Florentino - Portfolio 
 
-A personal portfolio website built with a bold **Neo-Brutalist** design aesthetic. This project showcases my work, skills, and experience as a Front-end Developer.
+A personal portfolio website built with a **Neo-Brutalist** design aesthetic. This project showcases my work, skills, and experience as a Front-end Developer.
 
 ## Neo-Brutalism 
 
