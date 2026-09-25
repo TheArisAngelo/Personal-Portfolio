@@ -43,7 +43,6 @@ const Socialicons = () => {
 
       <div className="border-l-4 border-black dark:border-white h-16"></div>
       <span className="font-black text-sm tracking-widest uppercase whitespace-nowrap -rotate-90 origin-center translate-y-2 text-black dark:text-white">
-        Follow Me
       </span>
     </div>
   );
