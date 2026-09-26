@@ -9,7 +9,9 @@ import {
 } from "../../content_option";
 
 // Import your profile picture here (adjust filename if necessary)
-import profilePic from "../../assets/images/FB Dp.jpg";
+import profilePic from "../../assets/images/Type shit.jpg";
+
+import resumePdf from "../../assets/files/Resume-Florentino-2026.pdf";
 
 export const About = () => {
   return (
@@ -33,7 +35,7 @@ export const About = () => {
             <img
               src={profilePic}
               alt="Don Florentino"
-              className="w-full h-auto object-cover border-4 border-black dark:border-white grayscale contrast-125"
+              className="w-full h-auto object-cover border-4 border-black dark:border-white"
             />
 
             {/* Floating Badge */}
@@ -50,13 +52,14 @@ export const About = () => {
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-4 mt-8 justify-center lg:justify-start">
             <a
-              href="/#contact"
+              href="/contact"
               className="bg-neo-blue text-white font-black text-lg border-4 border-black dark:border-white px-6 py-3 shadow-neo dark:shadow-neo-dark hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-neo-sm dark:hover:shadow-neo-sm-dark transition-all duration-150"
             >
               Let's Talk →
             </a>
             <a
-              href="/resume.pdf"
+              href={resumePdf}
+              download="Resume-Florentino-2026"
               target="_blank"
               rel="noreferrer"
               className="bg-white dark:bg-neo-white-dark text-black dark:text-white font-black text-lg border-4 border-black dark:border-white px-6 py-3 shadow-neo dark:shadow-neo-dark hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-neo-sm dark:hover:shadow-neo-sm-dark transition-all duration-150"

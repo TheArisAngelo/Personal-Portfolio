@@ -5,9 +5,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "neo-bg": "#FDFBF7", // Light mode background
-        "neo-bg-dark": "#1A1A1A", // Dark mode background
-        "neo-white-dark": "#2A2A2A", // Dark mode "white" cards
+        "neo-bg": "#FDF6E3", // Warm cream (Light mode)
+        "neo-bg-dark": "#1F1B16", // Warm charcoal (Dark mode)
+        "neo-white-dark": "#2A2620", // Slightly warmer card background for dark mode
         "neo-yellow": "#FFD700",
         "neo-red": "#FF4B4B",
         "neo-blue": "#2563EB",

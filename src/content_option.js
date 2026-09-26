@@ -1,5 +1,6 @@
 import rwbImage from "./assets/images/rwb-project.jpg";
 import pomodoroImage from "./assets/images/pomodoro-project.jpg";
+import spendwiseImage from "./assets/images/spendwise-project.jpg";
 
 const logotext = "Don";
 const meta = {
@@ -10,13 +11,23 @@ const meta = {
 
 const introdata = {
   title: "I’m Don!",
-  animated: {
-    first: "I'm passionate about turning ideas into functional, elegant code.",
-    second:
-      "I create modern, user-friendly websites with clean and responsive designs.",
-    third:
-      "I build web experiences that are fast, accessible, and optimized for all devices.",
-  },
+  animated: [
+    {
+      line1: "I'm passionate about",
+      line2: "turning ideas into",
+      line3: "functional experiences.",
+    },
+    {
+      line1: "I create modern,",
+      line2: "user-friendly websites",
+      line3: "with clean designs.",
+    },
+    {
+      line1: "I build web experiences",
+      line2: "that are fast & accessible,",
+      line3: "optimized for all devices.",
+    },
+  ],
   description:
     "Currently working as a Front-end Developer at Silver Goose 8 International. I'm passionate about all things web — whether it's building intuitive user interfaces or diving into back-end development to understand the full stack.",
   your_img_url:
@@ -109,6 +120,12 @@ const dataportfolio = [
     description:
       "Pomodoro Project that is a secret weapon for getting things done.",
     link: "https://pomodoro-project-lime.vercel.app/",
+  },
+  {
+    img: spendwiseImage,
+    description:
+      "A Personal Budget Tracker, where you can note down your expenses, income, etc.",
+    link: "https://spend-wise-7vbz.vercel.app/",
   },
 ];
 

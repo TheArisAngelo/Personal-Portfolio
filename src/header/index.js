@@ -55,6 +55,7 @@ const Headermain = () => {
               { name: "Home", path: "/" },
               { name: "Portfolio", path: "/portfolio" },
               { name: "About", path: "/about" },
+              { name: "After Hours", path: "/afterhours" },
               { name: "Contact", path: "/contact" },
             ].map((item, index) => (
               <li key={index} className="w-full">
